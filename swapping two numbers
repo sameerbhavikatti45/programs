@@ -1,0 +1,23 @@
+//call by reference
+#include<iostream.h>
+#include<conio.h>
+void swap(int *,int *);
+void main()
+{
+	int a,b;
+	clrscr();
+	cout<<"\n enter two numbers:";
+	cin>>a;
+	cin>>b;
+	cout<<"\n values before function call a="<<a<<"\tb="<<b;
+	swap(&a,&b);
+	cout<<"\n values after function call a="<<a<<"\tb="<<b;
+	getch();
+}
+void swap(int *a,int *b)
+{
+int temp;
+temp=*a;
+*a=*b;
+*b=temp;
+}
