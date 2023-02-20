@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+int max(int,int);
+int min(int,int);
+inline int max(int a,int b)
+{
+	return a>b?a:b;
+}
+inline int min(int a,int b)
+{
+	return a<b?a:b;
+}
+int main()
+{
+int a,b;
+//clrscr();
+std::cout<<"\n enter two number: ";
+std::cin>>a>>b;
+std::cout<<"\n maximum is: "<<max(a,b);
+std::cout<<"\n minimum is: "<<min(a,b);
+getch();
+}
