@@ -1,0 +1,20 @@
+#include<iostream>
+#include<conio.h>
+void salary(int rate=2000)
+{
+char name[10];
+int h,sal;
+std::cout<<"\n enter your name:";
+std::cin>>name;
+std::cout<<"\n number of hours worked: ";
+std::cin>>h;
+sal=h*rate;
+std::cout<<"\n salary is:"<<sal;
+return;
+}
+int main()
+{
+// clrscr();
+salary();
+getch();
+}
